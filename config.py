@@ -60,19 +60,19 @@ Tʜɪs Bᴏᴛ Wᴀs Cʀᴇᴀᴛᴇᴅ Bʏ : @Doremon_Botz 🛠</b>"""
 ✯ Bᴜɪʟᴅ Vᴇʀsɪᴏɴ : Billa Rᴇɴᴀᴍᴇʀ V3.0.0</a></b>     
 ╰───────────────⍟ """
 
-    HELP_TXT = """
+    THUMBNAIL_TXT = """
 🌌 <b><u>Hᴏᴡ Tᴏ Sᴇᴛ Tʜᴜᴍʙɴɪʟᴇ</u></b>
   
 •> /start a bot and send any picture to automatically set thumbnile.
 •> /delthumb use this command and delete your old thumbnile.
-•> /viewthumb use this command view your current thumbnile.
+•> /viewthumb use this command view your current thumbnile."""
 
-📑 HOW TO SET CUSTOM CAPTION
+     CUSTOM_TXT ="""
 •> /set_caption - set a custom caption
 •> /see_caption - see your custom caption
-•> /del_caption - delete custom caption
+•> /del_caption - delete custom caption."""
 
-Example:- /set_caption
+     HELP_TXT ="""
 
 <code>{prefix}</code>  = new name with your prefix
 <code>{filename}</code>  = new name  
