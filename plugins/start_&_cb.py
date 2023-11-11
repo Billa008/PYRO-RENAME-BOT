@@ -74,8 +74,8 @@ async def cb_handler(client, query: CallbackQuery):
             text=Txt.HELP_TXT,
             disable_web_page_preview=True,
             reply_markup=InlineKeyboardMarkup([[
-        InlineKeyboardButton('🖼️ THUMBNAIL 🖼️', url='https://t.me/Doremon_Botz'),
-        InlineKeyboardButton('📝 CAPTION 📝', url='https://t.me/+5xScmjemXiI4Yjll')],
+        InlineKeyboardButton('🖼️ THUMBNAIL 🖼️', callback_data='thumbnail'),
+        InlineKeyboardButton('📝 CAPTION 📝',callback_data='caption')],
         InlineKeyboardButton("❌ Cʟᴏꜱᴇ", callback_data = "close"),
         InlineKeyboardButton("◀️ Bᴀᴄᴋ", callback_data = "start")
             ]])            
@@ -90,15 +90,23 @@ async def cb_handler(client, query: CallbackQuery):
                 InlineKeyboardButton("◀️ Bᴀᴄᴋ", callback_data = "start")
             ]])            
         )
-    elif data == "dev":
+    elif data == "thumbnail":
         await query.message.edit_text(
-            text=Txt.DEV_TXT,
+            text=Txt.THUMBNAIL_TXT,
             disable_web_page_preview=True,
             reply_markup=InlineKeyboardMarkup([[
-                #⚠️ don't change source code & source link ⚠️ #
-                InlineKeyboardButton("❌ Cʟᴏꜱᴇ", callback_data = "close"),
-                InlineKeyboardButton("◀️ Bᴀᴄᴋ", callback_data = "start")
-            ]])          
+        InlineKeyboardButton("❌ Cʟᴏꜱᴇ", callback_data = "close"),
+        InlineKeyboardButton("◀️ Bᴀᴄᴋ", callback_data = "start")
+            ]])            
+        )
+   elif data == "caption":
+        await query.message.edit_text(
+            text=Txt.CAPTION_TXT,
+            disable_web_page_preview=True,
+            reply_markup=InlineKeyboardMarkup([[
+        InlineKeyboardButton("❌ Cʟᴏꜱᴇ", callback_data = "close"),
+        InlineKeyboardButton("◀️ Bᴀᴄᴋ", callback_data = "start")
+            ]])            
         )
     elif data == "close":
         try:
